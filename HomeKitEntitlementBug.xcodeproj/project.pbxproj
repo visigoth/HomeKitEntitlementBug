@@ -3,23 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A8E129725DB660B000FCE94 /* HomeKitEntitlementBugApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E129625DB660B000FCE94 /* HomeKitEntitlementBugApp.swift */; };
-		7A8E129925DB660B000FCE94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E129825DB660B000FCE94 /* ContentView.swift */; };
 		7A8E129B25DB660B000FCE94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8E129A25DB660B000FCE94 /* Assets.xcassets */; };
 		7A8E129E25DB660B000FCE94 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8E129D25DB660B000FCE94 /* Preview Assets.xcassets */; };
+		7A8E12A825DB6643000FCE94 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 7A8E12A725DB6643000FCE94 /* ArgumentParser */; };
+		7A8E12AB25DB6650000FCE94 /* HKServerCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E12AA25DB6650000FCE94 /* HKServerCommand.swift */; };
+		7A8E12B525DB672E000FCE94 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8E12B425DB672E000FCE94 /* HomeKit.framework */; };
+		7A8E12B825DB67D6000FCE94 /* AddRoomBugDemonstration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E12B725DB67D6000FCE94 /* AddRoomBugDemonstration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A8E129325DB660B000FCE94 /* HomeKitEntitlementBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeKitEntitlementBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A8E129625DB660B000FCE94 /* HomeKitEntitlementBugApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKitEntitlementBugApp.swift; sourceTree = "<group>"; };
-		7A8E129825DB660B000FCE94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A8E129A25DB660B000FCE94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A8E129D25DB660B000FCE94 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A8E129F25DB660B000FCE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A8E12AA25DB6650000FCE94 /* HKServerCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKServerCommand.swift; sourceTree = "<group>"; };
+		7A8E12B025DB66B0000FCE94 /* HomeKitEntitlementBug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HomeKitEntitlementBug.entitlements; sourceTree = "<group>"; };
+		7A8E12B425DB672E000FCE94 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		7A8E12B725DB67D6000FCE94 /* AddRoomBugDemonstration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoomBugDemonstration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8E12B525DB672E000FCE94 /* HomeKit.framework in Frameworks */,
+				7A8E12A825DB6643000FCE94 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +44,7 @@
 			children = (
 				7A8E129525DB660B000FCE94 /* HomeKitEntitlementBug */,
 				7A8E129425DB660B000FCE94 /* Products */,
+				7A8E12B325DB672E000FCE94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +59,12 @@
 		7A8E129525DB660B000FCE94 /* HomeKitEntitlementBug */ = {
 			isa = PBXGroup;
 			children = (
-				7A8E129625DB660B000FCE94 /* HomeKitEntitlementBugApp.swift */,
-				7A8E129825DB660B000FCE94 /* ContentView.swift */,
+				7A8E12B025DB66B0000FCE94 /* HomeKitEntitlementBug.entitlements */,
+				7A8E12AA25DB6650000FCE94 /* HKServerCommand.swift */,
 				7A8E129A25DB660B000FCE94 /* Assets.xcassets */,
 				7A8E129F25DB660B000FCE94 /* Info.plist */,
 				7A8E129C25DB660B000FCE94 /* Preview Content */,
+				7A8E12B725DB67D6000FCE94 /* AddRoomBugDemonstration.swift */,
 			);
 			path = HomeKitEntitlementBug;
 			sourceTree = "<group>";
@@ -67,6 +75,14 @@
 				7A8E129D25DB660B000FCE94 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A8E12B325DB672E000FCE94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A8E12B425DB672E000FCE94 /* HomeKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +101,9 @@
 			dependencies = (
 			);
 			name = HomeKitEntitlementBug;
+			packageProductDependencies = (
+				7A8E12A725DB6643000FCE94 /* ArgumentParser */,
+			);
 			productName = HomeKitEntitlementBug;
 			productReference = 7A8E129325DB660B000FCE94 /* HomeKitEntitlementBug.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 7A8E128A25DB660B000FCE94;
+			packageReferences = (
+				7A8E12A625DB6643000FCE94 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 7A8E129425DB660B000FCE94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A8E129925DB660B000FCE94 /* ContentView.swift in Sources */,
-				7A8E129725DB660B000FCE94 /* HomeKitEntitlementBugApp.swift in Sources */,
+				7A8E12AB25DB6650000FCE94 /* HKServerCommand.swift in Sources */,
+				7A8E12B825DB67D6000FCE94 /* AddRoomBugDemonstration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,20 +289,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HomeKitEntitlementBug/HomeKitEntitlementBug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HomeKitEntitlementBug/Preview Content\"";
 				DEVELOPMENT_TEAM = U2SYGH9TQE;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HomeKitEntitlementBug/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.visigoth.HomeKitEntitlementBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "2,6";
 			};
 			name = Debug;
 		};
@@ -289,20 +314,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HomeKitEntitlementBug/HomeKitEntitlementBug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HomeKitEntitlementBug/Preview Content\"";
 				DEVELOPMENT_TEAM = U2SYGH9TQE;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HomeKitEntitlementBug/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.visigoth.HomeKitEntitlementBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "2,6";
 			};
 			name = Release;
 		};
@@ -328,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A8E12A625DB6643000FCE94 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A8E12A725DB6643000FCE94 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A8E12A625DB6643000FCE94 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A8E128B25DB660B000FCE94 /* Project object */;
 }
